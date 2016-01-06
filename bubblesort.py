@@ -1,4 +1,6 @@
 import random
+import time
+
 
 sample_list = []
 
@@ -20,4 +22,6 @@ def bubbleSort(arr):
 				arr_sorted = False
 	print arr
 
+start_time = time.time()
 bubbleSort(sample_list)
+print "Sort took %s seconds" % (time.time() - start_time)
